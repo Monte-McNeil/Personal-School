@@ -4,6 +4,7 @@
 /* Generic styling */
 * {
     font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
     box-sizing: border-box;
     padding: 0%;
     margin: 0%;
@@ -12,18 +13,91 @@
 /* Header */
 header {
     background-color: #439cef;
-}
-
-.header-container {
     display: flex;
-    flex-direction: row;
-    border-bottom: 1px solid #F2F2F2;
-    padding: 2.3em 0;
     justify-content: space-between;
     
 }
 
+/* Logo */
 .logo {
-    margin-left: 10px;
-    ;
+    height: 100px;
+    margin: 25px 25px;
+    border-radius: 25px;
+}
+
+/* List Items */
+li, a {
+    font-size: 16px;
+    color: #EDF0F1;
+    text-decoration: none;
+    align-items: center;
+    margin: inherit;
+}
+
+nav > h1 {
+    text-align: center;
+    font-size: 50px;
+}
+/* Nav Bar */
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    border: 2px solid black;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: black;
+}
+
+/* Social Links */
+.social-links li  {
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    margin: inherit;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: inherit;
+
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: inherit;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: inherit;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: inherit;
 }
