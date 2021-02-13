@@ -65,39 +65,75 @@ nav > h1 {
     margin: inherit;
 }
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
     width: 50px;
     height: 50px;
     text-align: center;
     padding: inherit;
+    border-radius: 15px;
 
+}
+
+/* Styling each social button individually */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
 }
 
 .fa-twitter {
     background: #55ACEE;
     color: white;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    padding: inherit;
 }
 
 .fa-instagram {
     background: #125688;
     color: white;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    padding: inherit;
 }
 
 .fa-youtube {
     background: #bb0000;
     color: white;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    padding: inherit;
 }
+
+/* Starting on the body */
+
+/* Body image */
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container > .image {
+    flex: 1 0 0%;
+    text-align:right;
+}
+
+.image > img {
+    vertical-align:top;
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.container > .text {
+    flex: 2 0 0%;
+    /* and eventually */
+    margin:auto 0;
+    text-align: center;
+}
+
+.gif-img-container {
+    display: inline-block;
+    margin-left: 10%;
+}
+
+.gif-img-container > img {
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+  
