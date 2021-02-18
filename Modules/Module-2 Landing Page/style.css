@@ -1,7 +1,8 @@
+/* Importing a font from google 1st exceptional*/
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
 
 
-/* Generic styling */
+/* Universal styling */
 * {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 500;
@@ -12,7 +13,7 @@
 
 /* Header */
 header {
-    background-color: #439cef;
+    background-color: #008763;
     display: flex;
     justify-content: space-between;
     
@@ -49,6 +50,7 @@ nav > h1 {
     border: 2px solid black;
 }
 
+/* Transition on hover for navbar elements, 2nd exceptional */
 .nav-links li a {
     transition: all 0.3s ease 0s;
 }
@@ -86,7 +88,7 @@ nav > h1 {
 }
 
 .fa-instagram {
-    background: #125688;
+    background: #ff6600;
     color: white;
 }
 
@@ -97,16 +99,24 @@ nav > h1 {
 
 /* Starting on the body */
 
-/* Body image */
-
+/* First Body image */
 .container {
     display: flex;
     flex-direction: row-reverse;
+    background-color: #333333;
 }
 
+.container > .text {
+    color: #008763;
+    flex: 2 0 0%;
+    /* and eventually */
+    margin:auto 0;
+    text-align: center;
+}
 .container > .image {
     flex: 1 0 0%;
     text-align:right;
+    margin: 25px 25px;
 }
 
 .image > img {
@@ -114,26 +124,31 @@ nav > h1 {
     max-width: 100%;
     max-height: 300px;
 }
-
-.container > .text {
-    flex: 2 0 0%;
-    /* and eventually */
-    margin:auto 0;
+/* Multiple body pics container*/
+.container-2 {
+    background-color: #daa520;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-evenly;
     text-align: center;
+    padding-bottom: 340px;
+    position: relative;
 }
 
-.gif-img-container {
-    display: inline-block;
-    margin-left: 10%;
+.pic-class {
+    height: 400px;
+    width: 500px;
+    max-width: auto;
+    padding: 30px 30px 0px 30px;
 }
 
-.gif-img-container > img {
-    text-align: center;
-    height: 300px;
-    width: 300px;
-    padding: 10px;
-    margin: 50px;
-    border-radius: 25px;
+/* Styling Footer */
+footer {
+    background-color: #008763;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%; 
+    position: absolute;
+    bottom: 0;
 }
-
-  
