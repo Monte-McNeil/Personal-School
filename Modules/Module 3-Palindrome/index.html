@@ -3,26 +3,41 @@
 <head>
 	<link rel="stylesheet" href="style.css"type="text/css">
 </head>
+<body> 
 
-<body>
-<article>
-	<header>
-		<h1 class="h1">
-			Palindrome Checker
-		</h1>
-	</header>
-	<p>
-		Enter a word to check and click the 'Check' button to see if it's a palindrome:
-	</p>
-	<form>
-		<input type="text" id="input" class="input" onkeypress="checkForEnter(event)">
-		<br>
-		<a href="#" id="check" class="check">Check</a>
-	</form>
-	<div id="feedback" class="fb"></div>
-</article>
+    <header>
+        <h1>Palindrome Checker</h1>
+    </header>
 
-<script src="app.js"></script>
+<div class="container">
+        <div class="flex-child-1">
+            <h2>Obtain a word and see if it's a Palindrome</h2>
+            <form name="theForm">
+                Word: <input type="text" id="word" value=""> <br> <br>
+                Algorithm List 1 or 2? <input type="number" name="number" value=""> <br>
+                <button type="button" onclick="isPalindrome()">Add to list</button>
+            </form>
+        </div>
+        <div class="flex-child-2">
+            <h2>Algorithm 1</h2>
+			<p>Word is palindrome?</p>
+            <table id="list1">
+                <tr></tr>
+            </table>
+            <br> <br>
+            <button type="button" onclick="clearList1()">Clear List</button>
+
+            <h2>Algorithm 2</h2>
+			<p>Word is Palindrome?</p>
+            <table id="list2">
+                <tr></tr>
+            </table>
+            <br> <br>
+            <button type="button" onclick="clearList2()">Clear List</button>
+        </div>
+    </form>
+</div>
+    <script src="app.js"></script>
 </body>
 
 </html>

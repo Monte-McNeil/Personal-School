@@ -1,31 +1,17 @@
-.check{
-	border-radius:0.25rem;
-	background-color:#000;
-	color:#fff;
-	padding:0.25rem;
-	margin:0.5rem;
-	border:2px solid #000;
+* {
+    box-sizing: border-box;
+    background-color: #C0C0C0;
 }
-.check:hover{
-	background-color:#777;
+
+.container {
+    display: flex;
 }
-.input, .h1, p, .fb, .palindrome, .notpalindrome{
-	margin:0.5rem;
-}
-.h1{
-	font-family: Arial,sans-serif;
-	font-size: 2rem;
-}
-p, .check, .fb, .palindrome, .notpalindrome {
-	font-family: Arial,sans-serif;
-	font-size: 1rem;
-	text-decoration:none;
-}
-.palindrome{
-	color:#007700;
-	font-weight: bold;
-}
-.notpalindrome{
-	color:#770000;
-	font-weight:bold;
+
+.flex-child-1 {
+    flex: 50%;
+}  
+
+.flex-child-2 {
+    flex: 50%;
+    margin-left: 50px;
 }
