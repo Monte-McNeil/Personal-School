@@ -1,12 +1,18 @@
-const url = 'https://baconipsum.com/api/?type=all-meat&paras=2&start-with-lorem=1';
-const json_text = document.getElementById('list1')
-const para_text = document.getElementById('list2')
+async function bacon() {
+    let url = 'https://baconipsum.com/api/?type=meat-and-filler';
 
-function api() {
-    fetch(url)
-    .then(res => res.json())
-    .then((out) => {
-        return (json_text.insertRow(json_text.rows.length)).innerHTML = out;
-    })
+    let newParagraphs = document.getElementById('numOfParas').value
+    url = url + "?type-meat-and-filler&paras=" + newParagraphs
+
+    let response = await fetch(url)
+    document.getElementById('rawData').innerHTML = ""
+    document.getElementById('formattedData').innerHTML = ""
+
+    let jsonData = await response.json()
+    document.getElementById('rawData').innerHTML = JSON.stringify(jsonData);
+
+    for(para in jsonData) {
+        document.getElementById('formattedData').innerHTML += "<p>" + jsonData[para] + "</p>"
+    }
+    return true;
 }
-

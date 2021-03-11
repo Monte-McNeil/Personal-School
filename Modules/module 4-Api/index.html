@@ -10,32 +10,24 @@
     </header>
 
 <div class="container">
-        <div class="flex-child-1">
-            <h3>Obtain User Information</h3>
-            <form name="theForm">
-                How many paragraphs? 
-                <select>
+    <div class="flex-child-1">
+          <h3>Obtain User Information</h3>
+            <label for="numOfParas">How many paragraphs?</label>
+                <select id="numOfParas">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
-                <button type="button" onclick="api()">Formulate from API</button>
-            </form>
-        </div>
+                <input type="button" value="Bacon Ipsum" onclick="bacon()">
+    </div>
         <div class="flex-child-2">
             <h2> Returned Data is raw JSON</h2> 
-            <table id="list1"> 
-                <tr></tr>
-            </table> 
-            <br> <br>
+                <p id="rawData"></p>
             <h2>Returned data as formatted paragraphs</h2>
-            <table id="list2">
-                <tr></tr>
-            </table>
+                <p id="formattedData"></p>
         </div>
-    </form>
 </div>
     <script src="app.js"></script>
 </body>
