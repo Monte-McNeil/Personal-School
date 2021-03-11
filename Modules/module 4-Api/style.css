@@ -7,24 +7,10 @@
     display: flex;
     flex-wrap: wrap;
 }
-.myflexboxRow {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-.myflexboxColumn {
+.flex-child {
     flex: 33%;
     padding: 20px;
-}
-
-.flex-child-2 {
-    padding-left: 500px;
-    display: flex;
-}
-
-.flex-child-2 > h2, table {
-    padding-inline-end: 5em;
-    display: flex;
 }
 
 @media screen and (max-width: 600px) {
