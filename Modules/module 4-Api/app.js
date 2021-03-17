@@ -14,5 +14,5 @@ async function bacon() {
     for(para in jsonData) {
         document.getElementById('formattedData').innerHTML += "<p>" + jsonData[para] + "</p>"
     }
-    return true;
 }
+    return true;
