@@ -1,8 +1,25 @@
-* {
-    font-family: calibri, sans-serif;
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
-    background-color: gray;
-    ;
+}
+
+.myflexboxRow {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.myflexboxColumn {
+    flex: 33%;
+    padding: 20px;
+}
+
+.myEncryption {
+    flex: 33%;
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .myflexboxRow {
+        flex-direction: column;
+    }
 }
