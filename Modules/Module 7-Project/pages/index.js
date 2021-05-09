@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Launch Library 2</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Navbar />

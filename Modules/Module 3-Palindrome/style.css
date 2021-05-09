@@ -3,6 +3,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: larger;
+}
+
+#ci {
+    margin-bottom: 15px;
+}
+
 .myflexboxRow {
     display: flex;
     flex-wrap: wrap;
@@ -19,6 +27,3 @@
     }
 }
 
-body {
-    font-size: larger;
-}
