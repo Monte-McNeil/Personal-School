@@ -1,17 +1,16 @@
+import React, { Component } from "react"
 import "./App.css";
+import Form from "./Form.js"
 
 class App extends Component {
-  state = {
-    visible: true
-  };
-
-  render() {
-    return (
-      <div className="App">
-   
-      </div>
-    );
-  }
+    render() {
+  return (
+    <div className="App">
+      <h1>Doane Athletic Survey</h1>
+      <Form />
+    </div>
+  );
+};
 }
 
 export default App;
