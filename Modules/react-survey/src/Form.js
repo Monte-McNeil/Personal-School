@@ -9,6 +9,9 @@ import React from 'react'
       sport: '',
       feedback: '',
     }
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleChange = (e) => {
@@ -23,8 +26,7 @@ import React from 'react'
 
   handleSubmit(e) {
     e.preventDefault();
-   // alert('Name is' + this.state.fullName + 'Sport is: ' + this.state.sport + 'Feedback is: ' + this.state.feedback)
-   alert('Name is' + this.state.fullName);
+    alert('Name is' + this.state.fullName +  ' Sport is: ' + this.state.sport +  ' Feedback is: ' + this.state.feedback)
   }
 
   render() {
