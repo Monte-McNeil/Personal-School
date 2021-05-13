@@ -8,7 +8,7 @@ import React from 'react'
       fullName: ' ',
       gender: ' ',
       sport: ' ',
-      enjoy: 'yes',
+      enjoy: ' ',
       feedback: ' '
     }
 
@@ -27,10 +27,10 @@ import React from 'react'
 
   handleSubmit(e) {
     e.preventDefault();
-    alert('Name is' + this.state.fullName +
+    alert('Name is: ' + this.state.fullName +
     ' | Gender is: ' + this.state.gender +
     ' | Sport is: ' + this.state.sport +
-    ' | Enjoy is' + this.state.enjoy +
+    ' | Enjoy is: ' + this.state.enjoy +
     ' | Feedback is: ' + this.state.feedback)
   }
 
@@ -49,9 +49,9 @@ import React from 'react'
           <select required name="gender"
           value={this.state.gender}
           onChange={this.handleChange}>
-             <option value="man">Man</option>
-             <option value="woman">Women</option>
-             <option value="differ">Prefer not to say</option>
+             <option value="Man">Man</option>
+             <option value="Woman">Women</option>
+             <option value="Differ">Prefer not to say</option>
           </select>
         </label>
 
@@ -64,7 +64,7 @@ import React from 'react'
 
         Did you enjoy your sport?
         Yes
-        <input
+        <input required 
            type="radio"
            name="enjoy"
            value="yes"
@@ -73,7 +73,7 @@ import React from 'react'
         />
 
         No
-        <input
+        <input required 
            type="radio"
            name="enjoy"
            value="no"
@@ -83,7 +83,7 @@ import React from 'react'
 
         <label>
           Please provide feedback about your Doane athletic experience <br></br>
-          <textarea name="feedback" required 
+          <textarea name="feedback"
           value={this.state.feedback} 
           onChange={this.handleChange} />
         </label> <br></br>

@@ -1,9 +1,9 @@
 export const Navbar = () => {
     return (
-        <>
-          <div className="font-mono flex bg-blue-500 text-4xl py-10 ">
-              <header>Welcome to Launch Library 2!</header>
-          </div>
-        </>
-      );
-    };
+    <div className='text-center text-4xl bg-blue-400 py-10'>
+      <header>
+        <h2>Launch Library 2</h2>
+      </header>
+    </div> 
+  );
+};
